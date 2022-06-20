@@ -279,14 +279,14 @@
   </url>
   
   <url>
-    <loc>https://ciraos.top/tags/c/</loc>
+    <loc>https://ciraos.top/tags/html/</loc>
     <lastmod>2022-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://ciraos.top/tags/html/</loc>
+    <loc>https://ciraos.top/tags/c/</loc>
     <lastmod>2022-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -342,6 +342,13 @@
   </url>
   
   <url>
+    <loc>https://ciraos.top/tags/nonebot2/</loc>
+    <lastmod>2022-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://ciraos.top/tags/python/</loc>
     <lastmod>2022-06-20</lastmod>
     <changefreq>weekly</changefreq>
@@ -350,13 +357,6 @@
   
   <url>
     <loc>https://ciraos.top/tags/re/</loc>
-    <lastmod>2022-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://ciraos.top/tags/nonebot2/</loc>
     <lastmod>2022-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -456,14 +456,21 @@
   </url>
   
   <url>
-    <loc>https://ciraos.top/categories/%E5%AD%A6%E4%B9%A0/c/</loc>
+    <loc>https://ciraos.top/categories/%E5%AD%A6%E4%B9%A0/html/</loc>
     <lastmod>2022-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://ciraos.top/categories/%E5%AD%A6%E4%B9%A0/html/</loc>
+    <loc>https://ciraos.top/categories/ATRI-robot/</loc>
+    <lastmod>2022-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://ciraos.top/categories/%E5%AD%A6%E4%B9%A0/c/</loc>
     <lastmod>2022-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -484,13 +491,6 @@
   </url>
   
   <url>
-    <loc>https://ciraos.top/categories/ATRI-robot/</loc>
-    <lastmod>2022-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://ciraos.top/categories/%E9%9A%8F%E7%AC%94/</loc>
     <lastmod>2022-06-20</lastmod>
     <changefreq>weekly</changefreq>
@@ -505,14 +505,14 @@
   </url>
   
   <url>
-    <loc>https://ciraos.top/categories/python/</loc>
+    <loc>https://ciraos.top/categories/nonebot2/</loc>
     <lastmod>2022-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://ciraos.top/categories/nonebot2/</loc>
+    <loc>https://ciraos.top/categories/python/</loc>
     <lastmod>2022-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -533,14 +533,14 @@
   </url>
   
   <url>
-    <loc>https://ciraos.top/categories/hexo/circle/</loc>
+    <loc>https://ciraos.top/categories/%E5%B0%8F%E8%AF%B4/</loc>
     <lastmod>2022-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://ciraos.top/categories/%E5%B0%8F%E8%AF%B4/</loc>
+    <loc>https://ciraos.top/categories/hexo/circle/</loc>
     <lastmod>2022-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -568,14 +568,14 @@
   </url>
   
   <url>
-    <loc>https://ciraos.top/categories/python/re/</loc>
+    <loc>https://ciraos.top/categories/mod%E5%88%B6%E4%BD%9C/</loc>
     <lastmod>2022-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://ciraos.top/categories/mod%E5%88%B6%E4%BD%9C/</loc>
+    <loc>https://ciraos.top/categories/python/re/</loc>
     <lastmod>2022-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
