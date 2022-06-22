@@ -36,32 +36,6 @@
   </entry>
   
   <entry>
-    <title>搭建一个hexo的后台qexo</title>
-    <link href="https://ciraos.top/p/118e4ad4/"/>
-    <id>https://ciraos.top/p/118e4ad4/</id>
-    <published>2022-05-27T06:19:35.000Z</published>
-    <updated>2022-05-27T06:19:35.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">
-</summary>
-        
-      
-    
-    
-    
-    <category term="qexo" scheme="https://ciraos.top/categories/qexo/"/>
-    
-    
-    <category term="qexo" scheme="https://ciraos.top/tags/qexo/"/>
-    
-  </entry>
-  
-  <entry>
     <title>C++基础之数组和指针和引用</title>
     <link href="https://ciraos.top/p/b545fdfc/"/>
     <id>https://ciraos.top/p/b545fdfc/</id>
@@ -200,7 +174,7 @@
     <link href="https://ciraos.top/p/904537c/"/>
     <id>https://ciraos.top/p/904537c/</id>
     <published>2022-01-08T15:29:56.000Z</published>
-    <updated>2022-03-05T05:55:00.000Z</updated>
+    <updated>2022-06-22T14:34:00.000Z</updated>
     
     
     <summary type="html">搭建kimo寄佬的ATRIbot</summary>
@@ -456,6 +430,25 @@
     
     
     <category term="hexo" scheme="https://ciraos.top/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hello world</title>
+    <link href="https://ciraos.top/p/e10c9c53/"/>
+    <id>https://ciraos.top/p/e10c9c53/</id>
+    <published>2021-07-08T03:40:00.000Z</published>
+    <updated>2021-07-08T03:40:00.000Z</updated>
+    
+    
+    <summary type="html">hello hexo world!</summary>
+    
+    
+    
+    <category term="随笔" scheme="https://ciraos.top/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+    <category term="随笔" scheme="https://ciraos.top/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
