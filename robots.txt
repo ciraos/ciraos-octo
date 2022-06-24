@@ -43,4 +43,4 @@ Disallow:
 Crawl-delay: 60
 Disallow: /bin/
 
-Sitemap: http://www.ciraos.top/sitemap.xml
+Sitemap: http://ciraos.top/sitemap.xml
