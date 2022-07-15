@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.ciraos.top/config.json</loc>
+    
+    <lastmod>2022-07-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.ciraos.top/p/2312bb5c/</loc>
     
     <lastmod>2022-07-05</lastmod>
@@ -471,20 +480,6 @@
   </url>
   
   <url>
-    <loc>https://www.ciraos.top/categories/game/</loc>
-    <lastmod>2022-07-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.ciraos.top/categories/%E5%B0%8F%E8%AF%B4/</loc>
-    <lastmod>2022-07-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.ciraos.top/categories/hexo/circle/</loc>
     <lastmod>2022-07-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -499,14 +494,14 @@
   </url>
   
   <url>
-    <loc>https://www.ciraos.top/categories/game/ra2/</loc>
+    <loc>https://www.ciraos.top/categories/game/</loc>
     <lastmod>2022-07-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.ciraos.top/categories/%E5%B0%8F%E8%AF%B4/%E6%8F%90%E7%93%A6%E7%89%B9%E5%8E%86%E9%99%A9%E8%AE%B0/</loc>
+    <loc>https://www.ciraos.top/categories/%E5%B0%8F%E8%AF%B4/</loc>
     <lastmod>2022-07-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -527,7 +522,21 @@
   </url>
   
   <url>
+    <loc>https://www.ciraos.top/categories/game/ra2/</loc>
+    <lastmod>2022-07-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.ciraos.top/categories/mod%E5%88%B6%E4%BD%9C/</loc>
+    <lastmod>2022-07-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.ciraos.top/categories/%E5%B0%8F%E8%AF%B4/%E6%8F%90%E7%93%A6%E7%89%B9%E5%8E%86%E9%99%A9%E8%AE%B0/</loc>
     <lastmod>2022-07-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
