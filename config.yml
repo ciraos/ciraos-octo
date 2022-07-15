@@ -1,0 +1,75 @@
+
+#? Config.yml
+
+name: CiraosDynamicWorker #自定义名称
+
+catch_rules: #转换规则
+
+    #! ClientWorker语法糖，匹配当前域，返回一个域名带端口
+    - rule: _ 
+      transform_rules:
+        - search: \#.+
+          type: url
+          replace: ''
+        - search: _
+          action: fetch
+          fetch:
+            engine: fetch
+        - search: (^4|^5)
+          type: status
+          action: return
+          return:
+            body: The GateWay is down!This Page is provided by ClientWorker!
+            status: 503
+
+    #! 并发CDN流量请求
+    - rule: ^https\:\/\/((cdn|fastly|gcore|test1|quantil)\.jsdelivr\.net\/npm|unpkg\.com)
+      transform_rules:
+        - search: _
+          replace:
+            - _
+            - https://unpkg.zhimg.com
+            - https://npm.elemecdn.com
+            - https://code.bdstatic.com/npm
+            #? - https://npm.sourcegcdn.com
+
+    #! 前端兼容webp
+    - rule: (?<=^https\:\/\/ciraos/(.*))\.jpg$
+      transform_rules:
+        - search: image\/webp
+          searchin: header
+          searchkey: Accept
+          replace: .webp
+          replacein: url
+          replacekey: .jpg
+
+      #! ICP绕备、家宽、动态加速
+      # - rule: _
+      #   transform_rules:
+      #     - search: \#.*
+      #       replace: ''
+      #     - search: _ 
+      #       replace: 
+      #         - _
+      #         - 150.158.84.252
+      #     - search: \.(js|css)
+      #       action: fetch
+      #       fetch:
+      #         status: 200
+      #         engine: classic
+      #         preflight: false
+      #         timeout: 5000
+      #         mode: cors
+      #         redirect: follow
+      #         credentials: include
+      #         timeout: 5000
+      #     - search: _
+      #       action: fetch
+      #       fetch:
+      #         status: 200
+      #         engine: parallel
+      #         preflight: true
+      #         mode: cors
+      #         redirect: follow
+      #         credentials: include
+      #         timeout: 5000
