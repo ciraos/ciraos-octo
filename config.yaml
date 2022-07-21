@@ -8,23 +8,6 @@ hotconfig:
 
 catch_rules:
 
-  #! ClientWorker语法糖，匹配当前域，返回一个域名带端口
-  - rule: _
-    transform_rules:
-      - search: \#.+
-        searchin: url
-        replace: ''
-      - search: _ 
-        action: fetch
-        fetch:
-          engine: fetch 
-      - search: (^4|^5) 
-        searchin: status 
-        action: return
-        return:
-          body: The GateWay is down! This Page is provided by ClientWorker!
-          status: 503
-
   #! 并发CDN流量请求
   - rule: ^https\:\/\/((cdn|fastly|gcore|test1|quantil)\.jsdelivr\.net\/npm|unpkg\.com)
     transform_rules:
@@ -49,6 +32,23 @@ catch_rules:
           - https://cdn.staticfile.org
           - https://mirrors.sustech.edu.cn/cdnjs/ajax/libs
           #- https://cdnjs.sourcegcdn.com/ajax/libs
+
+  #! ClientWorker语法糖，匹配当前域，返回一个域名带端口
+  - rule: _
+    transform_rules:
+      - search: \#.+
+        searchin: url
+        replace: ''
+      - search: _ 
+        action: fetch
+        fetch:
+          engine: fetch 
+      - search: (^4|^5) 
+        searchin: status 
+        action: return
+        return:
+          body: The GateWay is down! This Page is provided by ClientWorker!
+          status: 503
 
   #! webp兼容计划
   # - rule: (?<=^https\:\/\/s2.loli/(.*))\.jpg$
