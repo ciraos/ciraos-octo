@@ -2,9 +2,10 @@
 name: CiraosDynamicWorker
 
 #! 热更新
+hotpatch:
+    - https://raw.githubusercontent.com/ChenYFan/ClientWorker/gh-pages/cw.js
 hotconfig:
-  - https://raw.githubusercontent.com/ChenYFan/ClientWorker/gh-pages/config.yaml
-  - https://cdn.jsdelivr.net/gh/ChenYFan/ClientWorker/config.yaml
+    - https://raw.githubusercontent.com/ChenYFan/ClientWorker/gh-pages/config.yaml
 
 catch_rules:
 
