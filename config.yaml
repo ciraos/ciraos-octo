@@ -62,31 +62,31 @@ catch_rules:
   #         preflight: false
 
   #! webp兼容计划 - jpg
-  # - rule: (?<=^https\:\/\/s2.loli/(.*))\.jpg$
-  #   transform_rules:
-  #     - search: image\/webp
-  #       searchin: header
-  #       searchkey: Accept
-  #       replace: .webp
-  #       replacein: url
-  #       replacekey: .jpg
+  - rule: (?<=^https\:\/\/s2.loli/(.*))\.jpg$
+    transform_rules:
+      - search: image\/webp
+        searchin: header
+        searchkey: Accept
+        replace: .webp
+        replacein: url
+        replacekey: .jpg
 
   #! webp兼容计划 - png
-  # - rule: (?<=^https\:\/\/s2.loli/(.*))\.png$
-  #   transform_rules:
-  #     - search: image\/webp
-  #       searchin: header
-  #       searchkey: Accept
-  #       replace: .webp
-  #       replacein: url
-  #       replacekey: .jpg
+  - rule: (?<=^https\:\/\/s2.loli/(.*))\.png$
+    transform_rules:
+      - search: image\/webp
+        searchin: header
+        searchkey: Accept
+        replace: .webp
+        replacein: url
+        replacekey: .jpg
 
   #! webp兼容计划 - gif
-  # - rule: (?<=^https\:\/\/s2.loli/(.*))\.gif$
-  #   transform_rules:
-  #     - search: image\/webp
-  #       searchin: header
-  #       searchkey: Accept
-  #       replace: .webp
-  #       replacein: url
-  #       replacekey: .jpg
+  - rule: (?<=^https\:\/\/s2.loli/(.*))\.gif$
+    transform_rules:
+      - search: image\/webp
+        searchin: header
+        searchkey: Accept
+        replace: .webp
+        replacein: url
+        replacekey: .jpg
