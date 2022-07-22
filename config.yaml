@@ -3,9 +3,10 @@ name: CiraosDynamicWorker
 
 #! 热更新
 hotpatch:
-    - https://raw.githubusercontent.com/ChenYFan/ClientWorker/gh-pages/cw.js
-hotconfig:
-    - https://raw.githubusercontent.com/ChenYFan/ClientWorker/gh-pages/config.yaml
+    #- https://raw.githubusercontent.com/ChenYFan/ClientWorker/gh-pages/cw.js
+    - https://cdn.jsdelivr.net/gh/ChenYFan/ClientWorker/cw.js
+    #- https://raw.githubusercontent.com/ChenYFan/ClientWorker/gh-pages/config.yaml
+    - https://cdn.jsdelivr.net/gh/ChenYFan/ClientWorker/config.yaml]
 
 catch_rules:
 
@@ -23,7 +24,7 @@ catch_rules:
         searchin: status 
         action: return
         return:
-          body: The GateWay is down! This Page is provided by ClientWorker!
+          body: The GateWay is down!This Page is provided by ClientWorker!
           status: 503
 
   #! 并发CDN流量请求 - jsd | unpkg
