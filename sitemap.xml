@@ -331,6 +331,13 @@
   </url>
   
   <url>
+    <loc>https://www.ciraos.top/tags/nonebot2/</loc>
+    <lastmod>2022-07-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.ciraos.top/tags/python/</loc>
     <lastmod>2022-07-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -339,13 +346,6 @@
   
   <url>
     <loc>https://www.ciraos.top/tags/re/</loc>
-    <lastmod>2022-07-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.ciraos.top/tags/nonebot2/</loc>
     <lastmod>2022-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -480,13 +480,6 @@
   </url>
   
   <url>
-    <loc>https://www.ciraos.top/categories/python/</loc>
-    <lastmod>2022-07-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.ciraos.top/categories/nonebot2/</loc>
     <lastmod>2022-07-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -494,14 +487,7 @@
   </url>
   
   <url>
-    <loc>https://www.ciraos.top/categories/hexo/fcircle/</loc>
-    <lastmod>2022-07-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.ciraos.top/categories/python/re/</loc>
+    <loc>https://www.ciraos.top/categories/python/</loc>
     <lastmod>2022-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -536,14 +522,28 @@
   </url>
   
   <url>
-    <loc>https://www.ciraos.top/categories/game/ra2/</loc>
+    <loc>https://www.ciraos.top/categories/mod%E5%88%B6%E4%BD%9C/</loc>
     <lastmod>2022-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.ciraos.top/categories/mod%E5%88%B6%E4%BD%9C/</loc>
+    <loc>https://www.ciraos.top/categories/hexo/fcircle/</loc>
+    <lastmod>2022-07-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.ciraos.top/categories/python/re/</loc>
+    <lastmod>2022-07-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.ciraos.top/categories/game/ra2/</loc>
     <lastmod>2022-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
