@@ -39,38 +39,29 @@ catch_rules:
           status: 503
 
   #! 并发CDN流量请求 - npm
-  # - rule: ^https\:\/\/((cdn|fastly|gcore|test1|quantil)\.jsdelivr\.net\/npm|unpkg\.com)
-  #   transform_rules:
-  #     - search: _
-  #       replace:
-  #         - _
-  #         - https://unpkg.zhimg.com
-  #         - https://npm.elemecdn.com
-  #         - https://code.bdstatic.com/npm
-  #         #- https://npm.sourcegcdn.com
-  #         #- https://cdn.bilicdn.tk/npm
-  #       fetch:
-  #         status: 200
-  #         engine: parallel
-  #         preflight: false
+  - rule: ^https\:\/\/((cdn|fastly|gcore|test1|quantil)\.jsdelivr\.net\/npm|unpkg\.com)
+    transform_rules:
+      - search: _
+        replace:
+          - _
+          - https://unpkg.zhimg.com       #? 回源已关闭，原缓存有效
+          - https://npm.elemecdn.com      #? 2022/7/12 确认关闭回源，缓存有效
+          - https://code.bdstatic.com/npm #? 确认关闭回源，缓存有效
+          #- https://npm.sourcegcdn.com   #? 滥用封仓库，强制数字版本号
+          #- https://cdn.bilicdn.tk/npm   #? 由GamerNoTitle提供的反代，请勿滥用:D
 
   #! 并发CDN流量请求 - cdnjs
-  # - rule: ^https\:\/\/cdnjs\.cloudflare\.com\/ajax\/libs
-  #   transform_rules:
-  #     - search: _
-  #       replace:
-  #         - _
-  #         - https://cdn.bootcdn.net/ajax/libs
-  #         - https://lib.baomitu.com
-  #         - https://mirrors.cqupt.edu.cn/cdnjs/ajax/libs
-  #         - https://cdn.staticfile.org
-  #         - https://mirrors.sustech.edu.cn/cdnjs/ajax/libs
-  #         #- https://cdnjs.sourcegcdn.com/ajax/libs
-  #       action: fetch
-  #       fetch:
-  #         status: 200
-  #         engine: parallel
-  #         preflight: false
+  - rule: ^https\:\/\/cdnjs\.cloudflare\.com\/ajax\/libs
+    transform_rules:
+      - search: _
+        replace:
+          - _
+          - https://cdn.bootcdn.net/ajax/libs
+          - https://lib.baomitu.com
+          - https://mirrors.cqupt.edu.cn/cdnjs/ajax/libs    #? 重庆邮电
+          - https://cdn.staticfile.org
+          - https://mirrors.sustech.edu.cn/cdnjs/ajax/libs  #? 南大
+          - https://cdnjs.sourcegcdn.com/ajax/libs          #? 全同步 https://cdnjs.cloudflare.com
 
   #! webp兼容计划 - jpg
   # - rule: (?<=^https\:\/\/s2.loli/(.*))\.jpg$
@@ -105,7 +96,7 @@ catch_rules:
   #! 自动更新配置及clientworker - 通过autoupdate.js实现。
 
   #! 纯静态网站加速
-  # - rule: _ #ClientWorker语法糖，匹配当前域，返回一个域名带端口
+  # - rule: _             #? ClientWorker语法糖，匹配当前域，返回一个域名带端口
   #     transform_rules:
   #       - search: \#.*
   #         replace: ''
@@ -118,7 +109,7 @@ catch_rules:
   #           - ciraos.gitee.io
   #       - search: \.html$
   #         header:
-  #           Content-Type: text/html;charset=UTF-8 #修复标头
+  #           Content-Type: text/html;charset=UTF-8 #? 修复标头
   #       - search: _
   #         action: fetch
   #         fetch:
