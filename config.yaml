@@ -18,7 +18,7 @@ hotpatch:
   - https://raw.githubusercontent.com/ChenYFan/ClientWorker/gh-pages/config.yaml
 
 #! 
-cleaninterval: 1000*20
+#cleaninterval: 1000*20
 
 catch_rules:
 
