@@ -17,7 +17,7 @@ hotpatch:
   - https://raw.githubusercontent.com/ChenYFan/ClientWorker/gh-pages/config.yaml
 
 #! 自动清除过期缓存时间间隔
-#cleaninterval: 1000*3600 # 1000*10800
+cleaninterval: 1000*20 # 1000*3600 # 1000*10800
 
 catch_rules:
 
