@@ -17,7 +17,7 @@ hotpatch:
   - https://raw.githubusercontent.com/ChenYFan/ClientWorker/gh-pages/config.yaml
 
 #! 自动清除过期缓存时间间隔
-cleaninterval: 1000*20 # 1000*3600 # 1000*10800
+cleaninterval: 1000*3600 # 1000*10800
 
 catch_rules:
 
@@ -28,13 +28,13 @@ catch_rules:
         searchin: url
         replace: ''
       - search: _
-        replace: ciraos-octo.vercel.app #? www.ciraos.top # ciraos.github.io # ciraos.gitee.io
+  #      replace: ciraos-octo.vercel.app #? www.ciraos.top # ciraos.github.io # ciraos.gitee.io
         action: fetch
         fetch:
           engine: fetch 
-          redirect: manual
-          cache:
-            expire: 6*60*60*1000 #? 过期时间
+  #        redirect: manual
+  #        cache:
+  #          expire: 6*60*60*1000 #? 过期时间
       - search: (^4|^5) 
         searchin: status 
         action: return
