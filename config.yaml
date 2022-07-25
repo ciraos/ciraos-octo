@@ -20,25 +20,6 @@ catch_rules:
   #! ClientWorker语法糖，匹配当前域，返回一个域名带端口
   # - rule: _
   #   transform_rules:
-  #     - search: (\.js|\.css)$
-  #       action: fetch
-  #     - search: \#.+
-  #       searchin: url
-  #       replace: ''
-  #     - search: _
-  #       action: fetch
-  #       fetch:
-  #         engine: fetch
-  #     - search: (^4|^5)
-  #       searchin: status
-  #       action: return
-  #       return:
-  #         body: The GateWay id down! This Page is provided by ClientWorker!
-  #         status: 503
-
-  #! ClientWorker语法糖，匹配当前域，返回一个域名带端口
-  # - rule: _
-  #   transform_rules:
   #     - search: \#.+
   #       searchin: url
   #       replace: ''
@@ -60,19 +41,38 @@ catch_rules:
         searchin: url
         replace: ''
       - search: _
-        replace: ciraos-octo.vercel.app #? www.ciraos.top # ciraos.github.io # ciraos.gitee.io
+  #      replace: ciraos-octo.vercel.app #? www.ciraos.top # ciraos.github.io # ciraos.gitee.io
         action: fetch
         fetch:
           engine: fetch 
-          redirect: manual
-          cache:
-            expire: 6*60*60*1000 #? 过期时间
+  #        redirect: manual
+  #        cache:
+  #          expire: 6*60*60*1000 #? 过期时间
       - search: (^4|^5) 
         searchin: status 
         action: return
         return:
           body: The GateWay is down!This Page is provided by ClientWorker!
           status: 503
+
+  #! ClientWorker语法糖，匹配当前域，返回一个域名带端口
+  # - rule: _
+  #   transform_rules:
+  #     - search: (\.js|\.css)$
+  #       action: fetch
+  #     - search: \#.+
+  #       searchin: url
+  #       replace: ''
+  #     - search: _
+  #       action: fetch
+  #       fetch:
+  #         engine: fetch
+  #     - search: (^4|^5)
+  #       searchin: status
+  #       action: return
+  #       return:
+  #         body: The GateWay id down! This Page is provided by ClientWorker!
+  #         status: 503
 
   #! 并发CDN流量请求 - npm
   # - rule: ^https\:\/\/((cdn|fastly|gcore|test1|quantil)\.jsdelivr\.net\/npm|unpkg\.com)
