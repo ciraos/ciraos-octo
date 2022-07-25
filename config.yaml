@@ -26,7 +26,7 @@ catch_rules:
   #! ClientWorker语法糖，匹配当前域，返回一个域名带端口
   - rule: _
     transform_rules:
-      - search: （\.js|\.css)$
+      - search: (\.js|\.css)$
         action: fetch
       - search: \#.+
         searchin: url
