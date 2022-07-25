@@ -28,13 +28,13 @@ catch_rules:
         searchin: url
         replace: ''
       - search: _
-        replace: ciraos-octo.vercel.app #? www.ciraos.top # ciraos.github.io # ciraos.gitee.io
+  #      replace: ciraos-octo.vercel.app #? www.ciraos.top # ciraos.github.io # ciraos.gitee.io
         action: fetch
         fetch:
           engine: fetch 
-          redirect: manual
-          cache:
-            expire: 5*60*1000 #? 过期时间
+  #        redirect: manual
+  #        cache:
+  #          expire: 5*60*1000 #? 过期时间
       - search: (^4|^5) 
         searchin: status 
         action: return
