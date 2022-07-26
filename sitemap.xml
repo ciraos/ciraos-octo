@@ -349,13 +349,6 @@
   </url>
   
   <url>
-    <loc>https://www.ciraos.top/tags/fcircle/</loc>
-    <lastmod>2022-07-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.ciraos.top/tags/nonebot2/</loc>
     <lastmod>2022-07-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -371,6 +364,13 @@
   
   <url>
     <loc>https://www.ciraos.top/tags/re/</loc>
+    <lastmod>2022-07-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.ciraos.top/tags/fcircle/</loc>
     <lastmod>2022-07-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -540,14 +540,14 @@
   </url>
   
   <url>
-    <loc>https://www.ciraos.top/categories/hexo/fcircle/</loc>
+    <loc>https://www.ciraos.top/categories/python/re/</loc>
     <lastmod>2022-07-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.ciraos.top/categories/python/re/</loc>
+    <loc>https://www.ciraos.top/categories/hexo/fcircle/</loc>
     <lastmod>2022-07-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
