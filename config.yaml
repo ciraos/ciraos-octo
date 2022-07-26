@@ -24,18 +24,20 @@ catch_rules:
         searchin: url
         replace: ''
       - search: _ 
-        #replace: ciraos-octo.vercel.app
         action: fetch
         fetch:
           engine: fetch
-          #redirect: manual
-          #cache:
-            #expire: 1000*60*5
+          status: 200
+          preflight: false
+          timeout: 5000
+          cache:
+            expire: 1000*60*5
+            delay: 3000
       - search: (^4|^5) 
         searchin: status 
         action: return
         return:
-          body: The GateWay is down! This Page is provided by ClientWorker!
+          body: 呐呐呐！欧尼酱！！！这个页面挂掉了呢！！！（＞人＜；）请联系网站管理员哦！！
           status: 503
 
   #! 并发CDN流量请求 - npm
@@ -49,6 +51,11 @@ catch_rules:
   #         - https://code.bdstatic.com/npm #? 确认关闭回源，缓存有效
   #         #- https://npm.sourcegcdn.com   #? 滥用封仓库，强制数字版本号
   #         #- https://cdn.bilicdn.tk/npm   #? 由GamerNoTitle提供的反代，请勿滥用:D
+  #       action: fetch
+  #       fetch:
+  #         status: 200
+  #         engine: parallel
+  #         preflight: false
 
   #! 并发CDN流量请求 - cdnjs
   # - rule: ^https\:\/\/cdnjs\.cloudflare\.com\/ajax\/libs
@@ -62,6 +69,11 @@ catch_rules:
   #         - https://cdn.staticfile.org
   #         - https://mirrors.sustech.edu.cn/cdnjs/ajax/libs  #? 南大
   #         - https://cdnjs.sourcegcdn.com/ajax/libs          #? 全同步 https://cdnjs.cloudflare.com
+  #       action: fetch
+  #       fetch:
+  #         status: 200
+  #         engine: parallel
+  #         preflight: false
 
   #! webp兼容计划 - jpg
   # - rule: (?<=^https\:\/\/s2.loli/(.*))\.jpg$
@@ -92,7 +104,3 @@ catch_rules:
   #       replace: .webp
   #       replacein: url
   #       replacekey: .jpg
-
-  #! 自动更新配置及clientworker - 通过autoupdate.js实现。
-
-  #! 纯静态网站加速
