@@ -328,6 +328,13 @@
   </url>
   
   <url>
+    <loc>https://www.ciraos.top/tags/c/</loc>
+    <lastmod>2022-07-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.ciraos.top/tags/%E9%9A%8F%E7%AC%94/</loc>
     <lastmod>2022-07-27</lastmod>
     <changefreq>weekly</changefreq>
@@ -336,13 +343,6 @@
   
   <url>
     <loc>https://www.ciraos.top/tags/hexo/</loc>
-    <lastmod>2022-07-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.ciraos.top/tags/c/</loc>
     <lastmod>2022-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -484,14 +484,7 @@
   </url>
   
   <url>
-    <loc>https://www.ciraos.top/categories/%E9%9A%8F%E7%AC%94/</loc>
-    <lastmod>2022-07-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.ciraos.top/categories/hexo/</loc>
+    <loc>https://www.ciraos.top/categories/%E5%AD%A6%E4%B9%A0/c/</loc>
     <lastmod>2022-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -505,7 +498,14 @@
   </url>
   
   <url>
-    <loc>https://www.ciraos.top/categories/%E5%AD%A6%E4%B9%A0/c/</loc>
+    <loc>https://www.ciraos.top/categories/%E9%9A%8F%E7%AC%94/</loc>
+    <lastmod>2022-07-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.ciraos.top/categories/hexo/</loc>
     <lastmod>2022-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

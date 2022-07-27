@@ -14,6 +14,9 @@ catch_rules:
   #! ClientWorker语法糖，匹配当前域，返回一个域名带端口
   - rule: _
     transform_rules:
+      - search: \#.+
+        searchin: url
+        replace: ''
       - search: _ 
         action: fetch
         fetch:
@@ -22,3 +25,9 @@ catch_rules:
           preflight: false
           timeout: 5000
           expire: 1000*60*5
+      - search: (^4|^5) 
+        searchin: status 
+        action: return
+        return:
+          body: 呐呐呐！欧尼酱！！！这个页面挂掉了呢！！！（＞人＜；）请联系网站管理员哦！！
+          status: 503
