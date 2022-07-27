@@ -3,12 +3,8 @@
 name: CiraosDynamicWorker
 
 #! 热更新
-hotpatch:
-  #- https://cdn.jsdelivr.net/gh/ChenYFan/ClientWorker/cw.js
-  - https://raw.githubusercontent.com/ChenYFan/ClientWorker/gh-pages/cw.js
-
 hotconfig:
-  #- https://cdn.jsdelivr.net/gh/ChenYFan/ClientWorker/config.yaml
+  - https://cdn.jsdelivr.net/gh/ChenYFan/ClientWorker/config.yaml
   - https://raw.githubusercontent.com/ChenYFan/ClientWorker/gh-pages/config.yaml
 
 #! 自动清除过期缓存时间间隔
@@ -39,68 +35,3 @@ catch_rules:
         return:
           body: 呐呐呐！欧尼酱！！！这个页面挂掉了呢！！！（＞人＜；）请联系网站管理员哦！！
           status: 503
-
-  #! 并发CDN流量请求 - npm
-  # - rule: ^https\:\/\/((cdn|fastly|gcore|test1|quantil)\.jsdelivr\.net\/npm|unpkg\.com)
-  #   transform_rules:
-  #     - search: _
-  #       replace:
-  #         - _
-  #         - https://unpkg.zhimg.com       #? 回源已关闭，原缓存有效
-  #         - https://npm.elemecdn.com      #? 2022/7/12 确认关闭回源，缓存有效
-  #         - https://code.bdstatic.com/npm #? 确认关闭回源，缓存有效
-  #         #- https://npm.sourcegcdn.com   #? 滥用封仓库，强制数字版本号
-  #         #- https://cdn.bilicdn.tk/npm   #? 由GamerNoTitle提供的反代，请勿滥用:D
-  #       action: fetch
-  #       fetch:
-  #         status: 200
-  #         engine: parallel
-  #         preflight: false
-
-  #! 并发CDN流量请求 - cdnjs
-  # - rule: ^https\:\/\/cdnjs\.cloudflare\.com\/ajax\/libs
-  #   transform_rules:
-  #     - search: _
-  #       replace:
-  #         - _
-  #         - https://cdn.bootcdn.net/ajax/libs
-  #         - https://lib.baomitu.com
-  #         - https://mirrors.cqupt.edu.cn/cdnjs/ajax/libs    #? 重庆邮电
-  #         - https://cdn.staticfile.org
-  #         - https://mirrors.sustech.edu.cn/cdnjs/ajax/libs  #? 南大
-  #         - https://cdnjs.sourcegcdn.com/ajax/libs          #? 全同步 https://cdnjs.cloudflare.com
-  #       action: fetch
-  #       fetch:
-  #         status: 200
-  #         engine: parallel
-  #         preflight: false
-
-  #! webp兼容计划 - jpg
-  # - rule: (?<=^https\:\/\/s2.loli/(.*))\.jpg$
-  #   transform_rules:
-  #     - search: image\/webp
-  #       searchin: header
-  #       searchkey: Accept
-  #       replace: .webp
-  #       replacein: url
-  #       replacekey: .jpg
-
-  #! webp兼容计划 - png
-  # - rule: (?<=^https\:\/\/s2.loli/(.*))\.png$
-  #   transform_rules:
-  #     - search: image\/webp
-  #       searchin: header
-  #       searchkey: Accept
-  #       replace: .webp
-  #       replacein: url
-  #       replacekey: .jpg
-
-  #! webp兼容计划 - gif
-  # - rule: (?<=^https\:\/\/s2.loli/(.*))\.gif$
-  #   transform_rules:
-  #     - search: image\/webp
-  #       searchin: header
-  #       searchkey: Accept
-  #       replace: .webp
-  #       replacein: url
-  #       replacekey: .jpg
