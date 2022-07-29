@@ -1,1 +1,1 @@
-importScripts("https://cdn.jsdelivr.net/npm/clientworker@2.7.1");
+importScripts("https://cdn.jsdelivr.net/npm/clientworker@2.8.1");
