@@ -17,7 +17,7 @@ catch_rules:
       - search: _ 
         action: fetch
         fetch:
-          engine: crazy
+          engine: fetch
           status: 200
           preflight: false
           timeout: 5000
