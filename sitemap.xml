@@ -288,14 +288,14 @@
   </url>
   
   <url>
-    <loc>https://www.ciraos.top/tags/html/</loc>
+    <loc>https://www.ciraos.top/tags/EasyX/</loc>
     <lastmod>2022-07-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.ciraos.top/tags/EasyX/</loc>
+    <loc>https://www.ciraos.top/tags/html/</loc>
     <lastmod>2022-07-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -323,14 +323,14 @@
   </url>
   
   <url>
-    <loc>https://www.ciraos.top/tags/%E5%88%9D%E6%9F%92%E7%A7%91%E6%8A%80/</loc>
+    <loc>https://www.ciraos.top/tags/clientworker/</loc>
     <lastmod>2022-07-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.ciraos.top/tags/clientworker/</loc>
+    <loc>https://www.ciraos.top/tags/%E5%88%9D%E6%9F%92%E7%A7%91%E6%8A%80/</loc>
     <lastmod>2022-07-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -472,14 +472,7 @@
   </url>
   
   <url>
-    <loc>https://www.ciraos.top/categories/%E5%AD%A6%E4%B9%A0/html/</loc>
-    <lastmod>2022-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.ciraos.top/categories/%E5%88%9D%E6%9F%92%E7%A7%91%E6%8A%80/</loc>
+    <loc>https://www.ciraos.top/categories/%E5%AD%A6%E4%B9%A0/EasyX/</loc>
     <lastmod>2022-07-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -493,7 +486,14 @@
   </url>
   
   <url>
-    <loc>https://www.ciraos.top/categories/%E5%AD%A6%E4%B9%A0/EasyX/</loc>
+    <loc>https://www.ciraos.top/categories/%E5%88%9D%E6%9F%92%E7%A7%91%E6%8A%80/</loc>
+    <lastmod>2022-07-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.ciraos.top/categories/%E5%AD%A6%E4%B9%A0/html/</loc>
     <lastmod>2022-07-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
