@@ -17,7 +17,7 @@ catch_rules:
       - search: _ 
         action: fetch
         fetch:
-          engine: fetch
+          engine: crazy
           status: 200
           preflight: false
           timeout: 5000
@@ -26,8 +26,7 @@ catch_rules:
         searchin: status 
         action: return
         return:
-          body: 呐呐呐！欧尼酱！！！这个页面挂掉了呢！！！（＞人＜；）请联系网站管理员哦！！ #? xxx
-          status: 503
+          body: 呐呐呐！欧尼酱！！！这个页面挂掉了呢！！！（＞人＜；）请联系网站管理员哦！！
 
   #! skip
   - rule: .*
