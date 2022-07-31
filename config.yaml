@@ -2,6 +2,8 @@
 name: CiraosDynamicWorker
 
 #! 热更新
+hotpatch:
+  - https://github.com/ciraos/ciraos-octo/blob/main/cw.js
 hotconfig:
   - https://github.com/ciraos/ciraos-octo/blob/main/config.yaml
 
