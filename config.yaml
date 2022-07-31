@@ -28,7 +28,7 @@ catch_rules:
           body: 呐呐呐！欧尼酱！！！这个页面挂掉了呢！！！（＞人＜；）请联系网站管理员哦！！
 
   #! skip
-  # - rule: .*
-  #   transform_rules:
-  #     - search: .*
-  #       action: skip
+  - rule: .*
+    transform_rules:
+      - search: .*
+        action: skip

@@ -1,1 +1,1 @@
-importScripts("https://npm.sourcegcdn.com/clientworker@2.7.1/dist/cw.js");
+importScripts("https://cdn.jsdelivr.net/npm/clientworker@2.8.1");
